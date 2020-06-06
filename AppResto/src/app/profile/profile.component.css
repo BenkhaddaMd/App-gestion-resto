@@ -1,0 +1,17 @@
+.card-avatar {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 160px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 160px;
+    -moz-background-clip: padding;
+    border-radius: 160px;
+    background-clip: padding-box;
+    margin: 7px auto;
+    background-size: 160px;
+    background-position: center center;
+}
+.card-avatar img{
+  border: 3px solid rgb(150, 151, 151);
+
+}

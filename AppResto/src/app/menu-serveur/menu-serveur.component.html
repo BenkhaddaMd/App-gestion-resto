@@ -1,0 +1,47 @@
+<div *ngFor="let plat of plats; let i = index"> 
+  <div class="card">
+    <div class="body-card">
+      <div class="top"> <img [src]="'./assets/img/uploadImages/'+plat.image" alt=""> </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="details">
+            <h1>{{plat.name}}</h1>
+            <p>{{plat.prix}}DH</p>
+          </div>
+          <div class="buy" (click)="buy(i)"><i class="material-icons">add_shopping_cart</i></div>
+        </div>
+        <div class="right">
+          <div class="done"><i class="material-icons">done</i></div>
+          <div class="details">
+            <h1>{{plat.name}}</h1>
+            <p>A été ajouté a votre commande</p>
+          </div>
+          <div class="remove" (click)="remove(i)"><i class="material-icons">clear</i></div>
+        </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><i class="material-icons">info_outline</i></div>
+      <div class="contents">
+        <table>
+          <tr>
+            <th>Nom</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>{{plat.name}}</td>
+            <td>{{plat.description}}</td>
+          </tr>
+          <tr>
+            <th>Prix</th>
+            <th>Something</th>
+          </tr>
+          <tr>
+            <td>{{plat.prix}} DH</td>
+            <td>{{plat.name}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
